@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0 30px;
+}
+.border {
+    border-radius: 5px;
+}
+.head {
+    font-size: 50px;
+    /* margin: 10px 30px; */
+    border: 1px solid white;
+    box-shadow: 5px 3px 10px #999;
+    padding: 10px 30px;
+}
+.head:hover {
+    box-shadow: 5px 5px 10px #999;
+}
+.sample-tested {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    margin-bottom: 10px;
+    background-color: rgba(106, 98, 36, 0.64);
+    color: #fff;
+}
+.sample-tested p {
+    font-size: 25px;
+}
+.sample-tested h3 {
+    font-size: 35px;
+}
+.others {
+    display: flex;
+    justify-content: space-between;
+}
+.others .child {
+    width: 23%;
+}
+.others p {
+    font-weight: bold;
+}
+.others h3 {
+    font-size: 35px;
+}
+.p {
+    padding: 10px 30px;
+}
+.confirmed {
+    background: #0492c2;
+    color: #fff;
+}
+.active {
+    background: #ffc82d;
+    color: #fff;
+}
+.discharged {
+    background: #138750;
+    color: #fff;
+}
+.death {
+    background: red;
+    color: #fff;
+}
+#state-cases {
+    width: 100%;
+    border-collapse: collapse;
+}
+#state-cases td,
+#state-cases th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+#state-cases tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+#state-cases tr:hover {
+    background-color: #ddd;
+}
+#state-cases th {
+    padding: 20px 8px;
+    text-align: left;
+    background-color: #138750;
+    color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (max-width: 865px) {
+    .others {
+        display: block;
+    }
+    .others .child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .others p {
+        font-weight: normal;
+        font-size: 25px;
+    }
 }
